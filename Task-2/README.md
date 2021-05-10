@@ -1,4 +1,4 @@
-## Task 1: Desktop Page
+## Task 2: Video Listing
 
 Creating Frontend design using HTML, CSS and Bootstrap.
 

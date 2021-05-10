@@ -81,3 +81,9 @@ hr {
   height: 0px;
   border: 1px solid #e0e3eb;
 }
+
+@media (max-width: 500px) {
+  div.p-5 {
+    padding: 30px !important;
+  }
+}

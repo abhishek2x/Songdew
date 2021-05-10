@@ -9,7 +9,7 @@ body {
   padding: 0;
   background-color: #f9f9f9;
 }
-
+/* 
 span.bg-light {
   background-color: #eff1f4 !important;
   font-weight: 400;
@@ -32,38 +32,67 @@ div.featured {
 
 .dropdown-menu {
   min-width: none;
+} */
+
+div.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
 }
 
-p.popings {
-  font-family: "system-ui";
-  font-size: 10px;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h6.popings {
-  font-family: "system-ui";
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-}
+/* card */
 
 img.img1 {
   /* position: absolute; */
-  width: 66px;
-  height: 62px;
-  left: 70px;
-  top: 358px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  left: 49.47px;
+  top: 467px;
+  border-radius: 10px;
 }
 
-a.btn-danger {
-  border-radius: 5px;
+h4.popings {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+h6.sub-popings {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #989aa3;
+  margin-bottom: 35px;
+}
+
+h5.card-title {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #222222;
+  line-height: 140%;
+  margin-top: 5px;
+}
+
+p.card-text {
+  font-family: "system-ui";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
 }
 
 div.card {
   min-height: 190px;
   border-radius: 10px;
+  border: none;
+  background-color: transparent;
 }
 
 p.color {
@@ -73,13 +102,14 @@ p.color {
   font-family: "system-ui";
 }
 
-div.block {
-  display: flex;
+div.container.box {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
-hr {
-  height: 0px;
-  border: 1px solid #e0e3eb;
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 500px) {

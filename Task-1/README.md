@@ -4,6 +4,6 @@ Creating Frontend design using HTML, CSS and Bootstrap.
 
 ## Screenshot
 
-<img src="./images/ss.png" />
+<img src="../Readme-Images/task1.png" />
 
 ---

@@ -26,7 +26,6 @@ span.nav :hover {
 
 div.featured {
   background: #ffffff;
-  /* box-shadow: 0px 7px 7px rgba(181, 187, 200, 0.25); */
   border-radius: 10px;
 }
 
@@ -49,6 +48,24 @@ img.img1 {
   left: 49.47px;
   top: 467px;
   border-radius: 10px;
+}
+
+img.img2 {
+  position: absolute;
+  left: 39%;
+  top: 20%;
+  bottom: 9.38%;
+  width: 45px;
+  height: 45px;
+}
+
+img.img3 {
+  position: absolute;
+  left: 45%;
+  top: 28%;
+  bottom: 9.38%;
+  width: 13px;
+  height: 13px;
 }
 
 h4.popings {

@@ -92,12 +92,14 @@ img.img1 {
 }
 
 img.img2 {
-  position: absolute !important;
-  left: 98.53px;
-  top: 51px;
+  position: absolute;
+  left: 45%;
+  top: 28%;
+  bottom: 9.38%;
   width: 45px;
   height: 45px;
 }
+
 
 h4.popings {
   font-style: normal;
@@ -211,7 +213,7 @@ button.view {
   img.img2 {
     position: absolute;
     left: 43%;
-    top: 30%;
+    top: 33%;
   }
 
   div.back {

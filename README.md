@@ -29,6 +29,6 @@ Creating Frontend design using HTML, CSS and Bootstrap.
 
 ## Screenshot
 
-// To be done...
+<img src="./Readme-Images/task3.png" />
 
 ---

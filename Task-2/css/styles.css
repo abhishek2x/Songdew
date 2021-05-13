@@ -27,6 +27,8 @@ span.bg-light {
 span.nav {
   background-color: white !important;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 span.nav :hover {
@@ -83,26 +85,21 @@ p.minsyl {
 }
 
 /* card */
-
 img.img1 {
-  /* position: absolute; */
   width: 100%;
   height: 100%;
-  left: 49.47px;
-  top: 467px;
   border-radius: 10px;
 }
 
 img.img2 {
-  position: absolute;
-  left: 39%;
-  top: 31%;
-  bottom: 9.38%;
+  position: absolute !important;
+  left: 98.53px;
+  top: 51px;
   width: 45px;
   height: 45px;
 }
 
-popings {
+h4.popings {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -214,7 +211,7 @@ button.view {
   img.img2 {
     position: absolute;
     left: 43%;
-    top: 33%;
+    top: 30%;
   }
 
   div.back {

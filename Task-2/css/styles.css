@@ -19,6 +19,14 @@ h5 {
   font-family: "system-ui";
 }
 
+p.genre {
+  font-size: 12px;
+  height: 18px;
+  color: #989aa3;
+  margin: 0px;
+  margin-right: 3px;
+}
+
 span.bg-light {
   background-color: #eff1f4 !important;
   font-weight: 400;
@@ -100,7 +108,6 @@ img.img2 {
   height: 45px;
 }
 
-
 h4.popings {
   font-style: normal;
   font-weight: 500;
@@ -171,20 +178,60 @@ div.underline {
 }
 
 button.dropdown-toggle {
-  background-color: #fff;
+  background-color: #f9f9f9;
   border-radius: 10px;
   width: 116px;
+}
+
+button.dropdown-toggle.show {
+  background-color: #fff;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 116px;
+  border-color: #fff;
+  /* padding-bottom: 8px; */
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
 
 .dropdown-menu {
   min-width: 4rem;
   width: 116px;
+  border-color: #fff;
 }
 
 button.view {
   background-color: #f9f9f9;
   border: none;
   color: #3d67ff;
+}
+
+@media (max-width: 1000px) {
+  div.p-5 {
+    padding: 30px !important;
+  }
+
+  img.img2 {
+    position: absolute;
+    left: 33%;
+    top: 12%;
+  }
+
+  div.back {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  img.img2 {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -205,21 +252,6 @@ button.view {
   }
 }
 
-@media (max-width: 800px) {
-  div.p-5 {
-    padding: 30px !important;
-  }
-
-  img.img2 {
-    position: absolute;
-    left: 43%;
-    top: 33%;
-  }
-
-  div.back {
-    display: none !important;
-  }
-}
 
 @media (min-width: 800px) {
   img.m-2.logo {

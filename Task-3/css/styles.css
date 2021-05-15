@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 p,
 h1,
 h3,
 h2,
 h4,
-h5 {
-  font-family: "system-ui";
+h5,
+button,
+span {
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -29,6 +33,10 @@ div.card {
   background-color: transparent;
 }
 
+div.icon-box2 {
+  display: none;
+}
+
 span.nav {
   background-color: white !important;
   font-weight: 400;
@@ -38,8 +46,8 @@ span.nav {
 
 img.img1 {
   /* position: absolute; */
-  width: 100%;
-  height: 100%;
+  max-width: 692px;
+  max-height: 433px;
   left: 49.47px;
   top: 467px;
   border-radius: 10px;
@@ -50,6 +58,14 @@ img.img2 {
   left: 45%;
   top: 28%;
   bottom: 9.38%;
+  width: 45px;
+  height: 45px;
+}
+
+img.cover-play {
+  position: absolute;
+  left: 34%;
+  top: 11%;
   width: 45px;
   height: 45px;
 }
@@ -77,17 +93,24 @@ p.minsyl {
   margin-left: 5px;
 }
 
+span.minsyl {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  color: #989aa3;
+}
+
 p.minsyl-2 {
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 170%;
   color: #222222;
   margin: 0;
 }
 
 button.minsyl {
-  font-family: "system-ui";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -103,13 +126,25 @@ button.minsyl {
   width: 170px;
 }
 
-.card-title {
-  font-weight: 600;
+h5.card-title {
+  font-weight: 500;
   font-style: normal;
+  width: 158px;
+  height: 25.81px;
+  margin-top: 9px;
+  margin-bottom: 2px;
+  font-size: 16px;
 }
 
 p.card-text {
   color: rgba(34, 34, 34, 0.8);
+  width: 158px;
+  height: 25.81px;
+  font-size: 12px;
+}
+
+div.v-box2 {
+  display: none !important;
 }
 
 textarea.area {
@@ -139,7 +174,13 @@ h4.card-title {
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 140%;
+}
+
+span.flw {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 170%;
 }
 
 h4.popings {
@@ -158,13 +199,17 @@ h6.sub-popings {
   margin-bottom: 35px;
 }
 
+.col-10 {
+  margin-left: 11px;
+}
+
 hr {
   height: 0px;
   border: 1px solid #e0e3eb;
 }
 
 ::placeholder {
-  font-family: "system-ui";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -176,24 +221,10 @@ button.view {
   background-color: #f9f9f9;
   border: none;
   color: #3d67ff;
-}
-
-@media (max-width: 500px) {
-  ul.nav.nav-tabs {
-    display: none;
-  }
-  p.card-text {
-    margin-bottom: 40px !important;
-  }
-  h4.popings {
-    font-size: smaller;
-  }
-  h6.sub-popings {
-    font-size: smaller;
-  }
-  button.view {
-    font-size: smaller;
-  }
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 @media (max-width: 800px) {
@@ -210,10 +241,79 @@ button.view {
   div.back {
     display: none !important;
   }
+
+  img.cover {
+    max-width: 492.23px;
+    max-height: 308px;
+  }
+  img.cover-play {
+    left: 42%;
+    top: 8%;
+  }
+  img.img1 {
+    max-width: 492.23px;
+    max-height: 308px;
+  }
+
+  div.col-md-3 {
+    margin-bottom: 20px;
+  }
+  span.flw {
+    font-size: 13px;
+  }
+  h4.popings {
+    font-size: 18px;
+  }
+  h6.sub-popings {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 800px) {
   img.m-2.logo {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  ul.nav.nav-tabs {
+    display: none;
+  }
+  p.card-text {
+    margin-bottom: 30px !important;
+  }
+  div.v-box1 {
+    display: none !important;
+  }
+  div.v-box2 {
+    display: block !important;
+  }
+  img.cover,
+  img.img1 {
+    max-width: 344px !important;
+    max-height: 200px;
+  }
+  img.cover-play {
+    left: 42%;
+    top: 5% !important;
+  }
+  div.icon-box1 {
+    display: none !important;
+  }
+  div.icon-box2 {
+    display: block !important;
+  }
+  .offset-cmt {
+    margin-left: 30% !important;
+    margin-top: 15px !important;
+  }
+  h4.popings {
+    font-size: 16px;
+  }
+  h6.sub-popings {
+    font-size: 16px;
+  }
+  div.reply {
+    margin-left: 30px !important;
   }
 }

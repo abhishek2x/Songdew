@@ -6,20 +6,10 @@
   margin: 0%;
 }
 
-:root {
-  --main-bg-color: #f9f9f9;
-  --card-width: 242.5px;
-  --card-height: 146px;
-  --card-width-md: 234px;
-  --card-height-md: 146px;
-  --card-width-sm: 344px;
-  --card-height-sm: 200px;
-}
-
 html body {
   margin: 0;
   padding: 0;
-  background-color: var(--main-bg-color);
+  background-color: rgba(249, 249, 249, 1);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
@@ -111,13 +101,14 @@ p.minsyl {
   line-height: 170%;
   color: #989aa3;
   margin: 0;
-  margin-right: 3%;
-  margin-left: 5px;
+  /* margin-right: 3%;
+  margin-left: 5px; */
 }
 
 /* vertical scroll */
 
 .scrolling-wrapper {
+  width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -140,69 +131,56 @@ p.minsyl {
   display: none;
 }
 
-div.col-lg-3 {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
+/* CARD */
 
-img.img1 {
-  max-width: 692px;
-  max-height: 433px;
+img.card-img-top {
   border-radius: 10px;
 }
 
-img.img2 {
+img.play-button {
   position: absolute;
-  left: 98.3px;
-  top: 51px;
   background: #ffffff;
   border-radius: 100px;
-
   width: 45px;
   height: 45px;
 }
 
-h3.popings {
+h3.video-text {
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
   line-height: 45px;
   width: 336px;
   height: 71px;
   color: #222222;
 }
 
-h4.popings {
+h4.block-title {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
   line-height: 36px;
 }
 
-h6.sub-popings {
+h6.block-subtitle {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
   color: #989aa3;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
-h5.card-title {
+h5.song-text {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 22.4px;
   color: #222222;
   line-height: 140%;
-  margin-top: 5px;
+  /* margin-top: 5px;*/
 }
 
-p.card-text {
+p.singer-text {
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
   line-height: 140%;
+  color: rgba(34, 34, 34, 0.8);
 }
 
 div.card {
@@ -220,16 +198,10 @@ p.color {
   font-style: light;
 }
 
-div.container.box {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 60px;
-}
-
 a.nav-link.active {
   border: none;
   background-color: #f9f9f9 !important;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: black !important;
 }
 
@@ -243,7 +215,6 @@ button.view {
   background-color: #f9f9f9;
   border: none;
   color: #3d67ff;
-  font-size: 12px;
   line-height: 18px;
 }
 
@@ -263,82 +234,166 @@ div.sort2 {
   display: none !important;
 }
 
-/* Two Cards */
-@media (max-width: 800px) {
-  img.img1 {
-    max-width: 492.23px;
-    max-height: 308px;
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  /* body {
+    border: 2px solid #1a73e8;
+  } */
+  div.container.main-block {
+    max-width: 375px;
+    padding: 0;
   }
-  img.img2 {
-    position: absolute;
-    left: 43%;
-    top: 33%;
+  img.card-img-top {
+    width: 344px;
+    height: 200px;
   }
-  div.card {
-    margin-bottom: 30px;
+  img.play-button {
+    top: 75px;
+    left: 147px;
   }
-  div.my-5.mx-auto {
-    margin-bottom: 0px !important;
+
+  /* fonts */
+  h3.video-text {
+    font-size: 28px;
   }
-  h4.popings {
+  h4.block-title {
     font-size: 18px;
   }
-  h6.sub-popings {
+  h6.block-subtitle {
+    font-size: 12px;
+  }
+  h5.song-text {
     font-size: 16px;
   }
-  div.tab1 {
-    display: none;
+  p.singer-text {
+    font-size: 12px;
   }
-  div.tab2 {
-    display: block;
+  button.view {
+    font-weight: 500;
+    font-size: 14px;
   }
-  div.tab2 > ul > li > a {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* body {
+    border: 2px solid #801212;
+  } */
+  div.container.main-block {
+    max-width: 548px;
+  }
+  img.card-img-top {
+    width: 234px;
+    height: 146px;
+  }
+  img.play-button {
+    top: 51px;
+    left: 98.53px;
+  }
+
+  /* fonts */
+  h3.video-text {
+    font-size: 24px;
+  }
+  h4.block-title {
+    font-size: 18px;
+  }
+  h6.block-subtitle {
+    font-size: 16px;
+  }
+  h5.song-text {
+    font-size: 14px;
+  }
+  p.singer-text {
+    font-size: 11px;
+  }
+  button.view {
+    font-weight: 500;
     font-size: 12px;
   }
 }
 
-/* One Card */
-@media (max-width: 558px) {
-  img.img1 {
-    height: var(--card-height-sm);
-    width: var(--card-width-sm);
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* body {
+    border: 2px solid #1ae835;
+  } */
+  div.container.main-block {
+    max-width: 1144px;
   }
-  button.view {
-    font-size: 14px;
+  img.card-img-top {
+    width: 242.05px;
+    height: 146px;
   }
-  p.card-text {
-    margin-bottom: 30px !important;
+  img.play-button {
+    top: 51px;
+    left: 99px;
   }
-  div.v-box1 {
-    display: none !important;
+
+  /* fonts */
+  h3.video-text {
+    font-size: 30px;
   }
-  div.v-box2 {
-    display: flex !important;
-    justify-content: center !important;
+  h4.block-title {
+    font-size: 24px;
   }
-  h4.first {
-    margin-top: 15px;
-  }
-  img.img1 {
-    max-width: 344px !important;
-    max-height: 200px;
-  }
-  h4.popings {
+  h6.block-subtitle,
+  h5.song-text {
     font-size: 16px;
   }
-  h6.sub-popings {
+  p.singer-text {
     font-size: 12px;
+  }
+  button.view {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* body {
+    border: 2px solid #e81ae8;
+  } */
+}
+
+/* Hiding components */
+
+@media (max-width: 992px) {
+  div.col-10.tab1 {
+    display: none;
+  }
+  div.col-md-9.tab2 {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 765px) {
+  div.col-4.v-box1 {
+    display: none !important;
+  }
+  div.col-8.col-xs-12 {
+    width: 344px;
+    margin-bottom: 24px;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  div.v-box2 {
+    display: block !important;
+    margin-left: 150px !important;
   }
   hr.view {
     display: block;
   }
-  div.tab2 {
-    display: none;
-  }
   div.sort2 {
-    display: flex !important;
+    display: block !important;
   }
-  /* div.sort {
-    justify-content: end;
-  } */
+  div.genre-box {
+    width: 345px;
+    display: flex !important;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
 }

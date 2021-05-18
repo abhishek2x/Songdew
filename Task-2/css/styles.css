@@ -15,12 +15,14 @@ html body {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 p,
+a,
 h1,
 h3,
 h2,
 h4,
 h5,
-button {
+button,
+span {
   font-family: "Poppins", sans-serif;
 }
 
@@ -252,14 +254,11 @@ a.nav-link {
   h4.block-title {
     font-size: 18px;
   }
-  h6.block-subtitle {
+  h6.block-subtitle, p.singer-text {
     font-size: 12px;
   }
   h5.song-text {
     font-size: 16px;
-  }
-  p.singer-text {
-    font-size: 12px;
   }
   button.view {
     font-weight: 500;

@@ -242,8 +242,7 @@ button.minsyl {
   margin: 0;
   border: none;
   background: #f9f9f9;
-  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.6),
-    4px 4px 5px rgba(216, 218, 225, 0.3);
+  box-shadow: -5px -5px 10px #ffffff, 4px 5px 10px rgba(216, 218, 225, 0.7);
   border-radius: 8px;
   width: 111px;
   height: 42px;

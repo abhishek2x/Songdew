@@ -126,6 +126,22 @@ p.minsyl {
 
 /* CARD */
 
+img.card-img-top-5:hover {
+  border: 1px solid #e0e3eb;
+  box-sizing: border-box;
+  box-shadow: 2px 10px 20px rgba(173, 179, 192, 0.3);
+}
+img.card-img-top-add:hover {
+  border: 1px solid #e0e3eb;
+  box-sizing: border-box;
+  box-shadow: 2px 10px 20px rgba(173, 179, 192, 0.3);
+}
+img.card-img-top:hover {
+  border: 1px solid #e0e3eb;
+  box-sizing: border-box;
+  box-shadow: 2px 10px 20px rgba(173, 179, 192, 0.3);
+}
+
 img.card-img-top,
 img.card-img-top-5,
 img.card-img-top-add {
